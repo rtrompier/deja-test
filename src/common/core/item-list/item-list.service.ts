@@ -275,7 +275,9 @@ export class ItemListService {
         if (!value) {
             return '';
         } else {
-            if (textField && value[textField]) {
+            if (textField && value.model && value.model[textField]) {
+                return value.model[textField];
+            } else if (textField && value[textField]) {
                 return value[textField];
             } else if (value.displayName) {
                 return typeof value.displayName === 'string' ? value.displayName : value.displayName();
@@ -1147,13 +1149,16 @@ export class ItemListService {
     }
 
     private compareItems = (item1: IItemBase, item2: IItemBase) => {
-        if (this._valueField) {
-            // Si dans on est dans le cas d'un model on compare le value field du model, sinon le valueField de l'item
+        if (item1.model && !item2.model) {
+            return false;
+        } else if (!item1.model && item2.model) {
+            return false;
+        } else if (this._valueField) {
             if (item1.model && item2.model) {
-                return item1.model[this._valueField] === item2.model[this._valueField];
-            } else {
-                return item1[this._valueField] === item2[this._valueField];
+                item1 = item1.model;
+                item2 = item2.model;
             }
+            return item1[this._valueField] === item2[this._valueField];
         } else if (item1.equals) {
             return item1.equals(item2);
         } else if (item2.equals) {
@@ -1163,6 +1168,10 @@ export class ItemListService {
         } else if (item2.model && item2.model.equals) {
             return item2.model.equals(item1.model);
         } else {
+            if (item1.model && item2.model) {
+                item1 = item1.model;
+                item2 = item2.model;
+            }
             return item1 === item2;
         }
     }

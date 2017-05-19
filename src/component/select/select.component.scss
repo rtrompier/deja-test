@@ -1,0 +1,156 @@
+deja-select {
+	position: relative;
+	min-height: 3.5rem;
+	white-space: initial;
+	display: block;
+
+	#select-placeholder {
+		display: flex;
+		align-items: center;
+	}
+
+	#input {
+		width: 100%;
+
+		.mat-input-suffix {
+			width: 2rem;
+			#clear-button {
+				opacity: 0.25;
+				&:hover {
+					opacity: 1;
+					cursor: pointer;
+				}
+			}
+		}
+		
+		.mat-hint {
+			bottom: -0.5em;
+		}
+
+		&[wait="true"] {
+            z-index: 910;
+			.mat-input-wrapper {
+				.mat-input-underline {
+					border-top: 0;
+					overflow: hidden;
+					position: absolute;
+					left: 0;
+					right: 0;
+					height: 2px;
+					margin-top: 10px;
+					&:before {
+						content: '';
+						position: absolute;
+						top: 0;
+						left: 0;
+						bottom: 0;
+						will-change: left, right;
+						animation: load 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+					}
+					&:after {
+						content: '';
+						position: absolute;
+						top: 0;
+						left: 0;
+						bottom: 0;
+						will-change: left, right;
+						animation: load-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+						animation-delay: 1.15s;
+					}
+				}
+			}
+		}
+
+		&[multiselection="true"][selection="above"] {
+			margin-top: 0.6rem;
+			.mat-input-wrapper {
+				margin-top: 0.5rem;
+				label.mat-input-placeholder {
+					display: block;
+					padding-top: 2rem;
+					-webkit-transform: translateY(-70%) scale(0.75);
+					transform: translateY(-70%) scale(0.75);
+					width: 133.33333%;
+				}
+				.mat-input-table>* {
+					display: table-row;
+					#md-input-prefix {
+						margin-bottom: 0.5rem;
+					}
+				}
+			}
+		}
+
+		[mdSuffix] {
+			md-progress-spinner {
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+		}
+	}
+
+	deja-dropdown {
+		&#listcontainer {
+			text-align: left;
+			overflow: auto;
+			position: absolute;
+			div.listitem {
+				white-space: nowrap;
+			}
+			&[valign="bottom"] {
+				border-top: none;
+			}
+			[current="true"] {
+				box-shadow: none;
+			}
+			&[keynav="false"] {
+				div.listitem:not(.unselectable):hover {
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	@keyframes load {
+		0% {
+			left: -35%;
+			right: 100%;
+		}
+		60% {
+			left: 100%;
+			right: -90%;
+		}
+		100% {
+			left: 100%;
+			right: -90%;
+		}
+	}
+	@keyframes load-short {
+		0% {
+			left: -200%;
+			right: 100%;
+		}
+		60% {
+			left: 107%;
+			right: -8%;
+		}
+		100% {
+			left: 107%;
+			right: -8%;
+		}
+	} // styling the icon and text in template placeholder. Avoid to repeat in sub-components
+	
+	$deep: '/deep/';
+	#{$deep} {
+		md-placeholder {
+			display: flex;
+			align-items: center;
+			md-icon {
+				margin-right: 0.5rem;
+			}
+		}
+	}
+
+	@import '../../common/core/item-list/item-list';
+	@import '../../common/core/item-list/tree-list';
+}

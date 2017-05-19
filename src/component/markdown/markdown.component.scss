@@ -1,0 +1,19 @@
+.markdown-content {
+
+    @import "~prismjs/themes/prism.css";
+    @import "~prismjs/themes/prism-coy.css";
+
+    padding: 1rem;
+
+    table {
+        border-collapse: collapse;
+
+        tr {
+            th, td {
+                border-width: 1px;
+                border-style: solid;
+                padding: 1rem;
+            }
+        }
+    }
+}
