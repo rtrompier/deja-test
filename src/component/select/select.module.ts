@@ -13,7 +13,7 @@ import { MdIconModule, MdInputModule} from '@angular/material';
 import { DejaChildValidatorModule } from '../../common/core/validation/index';
 import { DejaBackdropModule } from '../backdrop';
 import { DejaChipsModule } from '../chips';
-import { DejaDropDownModule } from '../dropdown';
+import { DejaDropDownModule } from '../dropdown/index';
 import { DejaSelectComponent } from './select.component';
 
 @NgModule({
