@@ -2,7 +2,8 @@
 
 # compiled output
 /dist
-/tmp
+/build
+/.tmp
 /out-tsc
 
 # dependencies
@@ -42,3 +43,6 @@ testem.log
 Thumbs.db
 
 # Ignore in source
+src/*.js
+src/*.js.map
+src/**/*.d.ts
