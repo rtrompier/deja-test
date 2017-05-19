@@ -12,8 +12,8 @@ import * as moment from 'moment';
 import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 import { KeyCodes } from '../../common/core/keycodes.enum';
-import { DejaChildValidatorDirective } from '../../common/core/validation';
-import { DaysOfWeek, DejaDateSelectorComponent } from '../date-selector';
+import { DejaChildValidatorDirective } from '../../common/core/validation/index';
+import { DaysOfWeek, DejaDateSelectorComponent } from '../date-selector/index';
 import { formatToMask } from './';
 
 const noop = () => { };
