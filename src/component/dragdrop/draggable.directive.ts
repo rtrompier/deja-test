@@ -8,7 +8,7 @@
 
 import { Directive, ElementRef, HostBinding, Input, Optional } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { UUID } from '../../common/core';
+import { UUID } from '../../common/core/UUID';
 import { DejaClipboardService } from '../../common/core/clipboard/clipboard.service';
 
 @Directive({

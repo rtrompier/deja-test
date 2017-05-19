@@ -4,9 +4,10 @@ import { FormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HttpModule } from '@angular/http';
 import { MdToolbarModule } from '@angular/material';
-import { SampleModule } from '../../src';
 
 import { AppComponent } from './app.component';
+
+import { DejaAccordionModule } from '../../index';
 
 @NgModule({
   declarations: [
@@ -16,9 +17,9 @@ import { AppComponent } from './app.component';
     BrowserModule,
     BrowserAnimationsModule,
     MdToolbarModule,
+    DejaAccordionModule,
     FormsModule,
     HttpModule,
-    SampleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
