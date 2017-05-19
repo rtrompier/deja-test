@@ -1,12 +1,4 @@
-@import '../../src/scss/index.scss';
-@import '~@angular/material/theming';
-
-
 :host {
-    
-@import '../../src/scss/variables/themeHUG';
-@include deja-theme($theme);
-
     h1 {
         color: green;
     }
