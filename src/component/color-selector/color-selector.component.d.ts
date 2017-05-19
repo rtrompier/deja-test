@@ -1,0 +1,33 @@
+import { ElementRef, EventEmitter } from '@angular/core';
+import { ControlValueAccessor, NgControl } from '@angular/forms';
+import { Color } from '../../common/core/graphics/index';
+export declare class DejaColorSelectorComponent implements ControlValueAccessor {
+    _control: NgControl;
+    private static indexAttribute;
+    colorhover: EventEmitter<{}>;
+    private _value;
+    protected onTouchedCallback: () => void;
+    protected onChangeCallback: (_: any) => void;
+    private _colors$;
+    private _colorFabs;
+    private _subColorFabs;
+    private _selectedBaseIndex;
+    private _selectedSubIndex;
+    private _disabled;
+    private colorFabs$;
+    private selectedBaseIndex$;
+    private subColorFabs$;
+    private selectedSubIndex$;
+    private hilightedBaseIndex;
+    private hilightedBaseIndex$;
+    private hilightedSubIndex;
+    private hilightedSubIndex$;
+    constructor(elementRef: ElementRef, _control: NgControl);
+    disabled: boolean | string;
+    colors: Color[];
+    selectedColor: Color;
+    value: Color;
+    writeValue(value: Color): void;
+    registerOnChange(fn: any): void;
+    registerOnTouched(fn: any): void;
+}

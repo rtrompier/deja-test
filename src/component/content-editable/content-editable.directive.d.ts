@@ -1,0 +1,30 @@
+import { ElementRef } from '@angular/core';
+import { ControlValueAccessor, NgControl } from '@angular/forms';
+export declare class DejaEditableDirective implements ControlValueAccessor {
+    _control: NgControl;
+    private model;
+    private _inEdition;
+    private _editMode;
+    private _mandatory;
+    private _multiline;
+    private onTouchedCallback;
+    private onChangeCallback;
+    private edit$;
+    private element;
+    private _disabled;
+    constructor(elementRef: ElementRef, _control: NgControl);
+    mandatory: boolean | string;
+    multiline: boolean | string;
+    disabled: boolean | string;
+    editMode: boolean | string;
+    inEdition: boolean | string;
+    value: any;
+    writeValue(value: any): void;
+    registerOnChange(fn: any): void;
+    registerOnTouched(fn: any): void;
+    focus(): void;
+    selectAll(): void;
+    edit(selectOnFocus?: boolean): void;
+    private isChildElement(element);
+    private refreshView();
+}

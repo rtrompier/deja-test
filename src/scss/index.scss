@@ -1,0 +1,36 @@
+@import 'variables/colors';
+@import 'utils/flex';
+
+@import 'components/loader';
+@import 'material/material';
+
+@import 'fonts/material-icons';
+@import 'fonts/roboto';
+
+
+/* See : http://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting-using-css */
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+       not supported by any browser */
+}
+
+/* Added for status managment */
+#dpi {
+    md-dialog-container {
+        padding: 0;
+        height: auto;
+    }
+}
+
+@import 'mixins/deja-theme';

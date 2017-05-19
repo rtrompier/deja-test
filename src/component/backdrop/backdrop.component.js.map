@@ -1,0 +1,1 @@
+{"version":3,"file":"backdrop.component.js","sourceRoot":"","sources":["backdrop.component.ts"],"names":[],"mappings":";;;;;;AAQA,OAAO,EAAE,SAAS,EAAE,MAAM,eAAe,CAAC;AAa1C,IAAa,qBAAqB;IAAlC;IAAqC,CAAC;IAAD,4BAAC;AAAD,CAAC,AAAtC,IAAsC;AAAzB,qBAAqB;IAPjC,SAAS,CAAC;QACP,QAAQ,EAAE,eAAe;QACzB,SAAS,EAAE;YACP,2BAA2B;SAC9B;QACD,QAAQ,EAAE,2BAA2B;KACxC,CAAC;GACW,qBAAqB,CAAI;SAAzB,qBAAqB"}

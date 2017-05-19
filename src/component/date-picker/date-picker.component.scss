@@ -1,0 +1,54 @@
+:host {
+    $deep: '/deep/';
+	#deja-dropdown {
+        overflow: visible;
+		box-shadow: rgba(0, 0, 0, 0.247059) 0px 14px 45px, rgba(0, 0, 0, 0.219608) 0px 10px 18px;
+		.actions {
+			position: absolute;
+			right: 0.3rem;
+			top: 0.3rem;
+			button {
+				background: none;
+				border: none;
+				box-shadow: none;
+			}
+		}
+	}
+    #date-selector {
+        #{$deep} {
+			.mat-input-wrapper {
+				padding-right: 24px;
+			}
+			#action-icon-container {
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translateY(-68%);
+			}
+			#calendar-button,
+			#clear-button {
+				cursor: pointer;
+				opacity: 0.4;
+				transition: opacity 200ms ease;
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+		}
+    }
+	&.ng-invalid {
+        #{$deep} {
+			.mat-input-wrapper {
+				.mat-input-underline {
+					.mat-input-ripple {
+						opacity: 1;
+						transform: scaleY(1);
+					}
+				}
+			}
+			md-hint {
+				bottom: -0.8em;
+			}
+		}
+    }
+}
