@@ -43,11 +43,17 @@ import {
     DejaMouseDragDropModule,
 } from '../../index';
 import { HomeComponent } from './home/home.component';
+import { HomeComponentsComponent } from './home-components/home-components.component';
+import { HomeGuidesComponent } from './home-guides/home-guides.component';
+import { DejaAccordionDemoComponent } from './accordion/accordion-demo.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        HomeComponent
+        HomeComponent,
+        HomeComponentsComponent,
+        HomeGuidesComponent,
+        DejaAccordionDemoComponent,
     ],
     imports: [
         FormsModule,
@@ -61,7 +67,14 @@ import { HomeComponent } from './home/home.component';
         FlexLayoutModule,
 
         DejaAccordionModule,
-        DejaCodeViewerModule,
+
+        DejaSelectModule,
+        DejaMarkdownModule,
+        DejaMouseDragDropModule.forRoot(),
+        DejaIFrameModule,
+        DejaBackdropModule,
+
+        /*DejaCodeViewerModule,
         DejaCircularPickerModule,
         DejaDateSelectorModule,
         DejaDatePickerModule,
@@ -89,7 +102,7 @@ import { HomeComponent } from './home/home.component';
         DejaSplitterModule,
         DejaTooltipModule,
         DejaViewPortModule,
-        DejaChipsModule,
+        DejaChipsModule,*/
     ],
     providers: [],
     bootstrap: [AppComponent]
