@@ -1,17 +1,11 @@
-<md-toolbar color="primary">My App</md-toolbar>
-<h1>
-  {{title}}
-</h1>
+<md-toolbar color="primary" id="toolbar-demo">
+    <img src="/assets/img/logo/hug-logo-bw.svg" alt="HUG Logo" height="30">
+    <a md-button routerLink="/">DEJA JS</a>
+    <a md-button routerLink="/components">COMPONENTS</a>
+    <a md-button routerLink="/guides">GUIDES</a>
+    <span fxFlex></span>
+    <!--<deja-select [models]="colors" textField="label" [ngModel]="theme" (ngModelChange)="theme = $event" placeholder="Sélectionnez un theme"></deja-select>-->
+    <a md-button href="https://github.com/DSI-HUG/dejajs-components" target="_blank">GITHUB</a>
+</md-toolbar>
 
-<deja-accordion>
-    <deja-accordion-group>
-        <deja-accordion-header primary>asdfa</deja-accordion-header>
-        <deja-accordion-body>asdf</deja-accordion-body>
-    </deja-accordion-group>
-    <deja-accordion-group>
-        <deja-accordion-header>asdfa</deja-accordion-header>
-        <deja-accordion-body>asdf</deja-accordion-body>
-    </deja-accordion-group>
-</deja-accordion>
-
-<sample-component></sample-component>
+<router-outlet></router-outlet>
