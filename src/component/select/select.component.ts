@@ -10,7 +10,6 @@ import { AfterContentInit, AfterViewInit, ChangeDetectionStrategy, ChangeDetecto
 import { ControlValueAccessor, FormGroupDirective, NgControl, NgForm } from '@angular/forms';
 import { MdInputContainer, MdInputDirective } from '@angular/material';
 import 'rxjs/add/operator/delayWhen';
-import 'rxjs/add/operator/mapToI';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Observable } from 'rxjs/Observable';
 import { Subject } from 'rxjs/Subject';
