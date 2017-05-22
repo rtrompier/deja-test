@@ -32,6 +32,7 @@ before_script:
 - sleep 3
 - npm prune
 - npm run licensecheck
+- npm run lint
 script:
 - npm test
 env:
