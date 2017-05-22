@@ -10,17 +10,17 @@ import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 
-// import { 
-//     DejaAccordionModule,
+import { 
+    // DejaAccordionModule,
     // DejaCodeViewerModule,
     // DejaCircularPickerModule,
     // DejaDateSelectorModule,
     // DejaDatePickerModule,
-    // DejaDialogModule,
+    DejaDialogModule,
     // DejaSelectModule,
     // DejaTreeListModule,
     // DejaTilesModule,
-    // DejaColorSelectorModule,
+    // DejaEditableModule,
     // DejaColorPickerModule,
     // DejaBoldQueryModule,
     // DejaIFrameModule,
@@ -41,11 +41,13 @@ import { AppComponent } from './app.component';
     // DejaViewPortModule,
     // DejaChipsModule,
     // DejaMouseDragDropModule,
-// } from '../../dist';
+} from '../../dist';
 
-import { DejaAccordionModule } from '../../src/index'; //Long au build | Long au rebuild
+// import { DejaAccordionModule } from '../../src/index'; //Long au build | Long au rebuild
 // import { DejaAccordionModule } from '../../src/component/accordion/index'; //Long au build | rapide au rebuild
 // import { DejaAccordionModule } from '../../dist'; //Long au build | Long au rebuild
+
+// import { DejaAutosizeTextAreaModule } from '../../dist';
 
 
 // import { DejaSelectModule } from '../../src/component/select/index';
@@ -77,7 +79,7 @@ import { DejaAccordionDemoComponent } from './accordion/accordion-demo.component
         MaterialModule,
         FlexLayoutModule,
         
-        DejaAccordionModule,
+        // DejaAutosizeTextAreaModule,
         // DejaSelectModule,
         // DejaMarkdownModule,
         // DejaMouseDragDropModule.forRoot(),
