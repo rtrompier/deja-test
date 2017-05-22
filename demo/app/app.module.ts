@@ -1,14 +1,14 @@
 import { MaterialColors } from '../../src/common/core/style/material-colors';
 
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { routing } from './route';
-import { RouterModule } from '@angular/router';
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
+import { routing } from './route';
 
 import { AppComponent } from './app.component';
 
@@ -21,13 +21,13 @@ import {
     DejaCodeViewerModule,
     DejaColorPickerModule,
     DejaColorSelectorModule,
-    DejaEditableModule,
-    DejaGridModule,
     DejaDatePickerModule,
     DejaDateSelectorModule,
     DejaDialogModule,
     DejaDragDropModule,
     DejaDropDownModule,
+    DejaEditableModule,
+    DejaGridModule,
     DejaIFrameModule,
     DejaListLoaderModule,
     DejaMarkdownModule,
@@ -46,9 +46,9 @@ import {
 // } from '../../dist';
 } from '../../src/index';
 
-import { HomeComponent } from './home/home.component';
 import { HomeComponentsComponent } from './home-components/home-components.component';
 import { HomeGuidesComponent } from './home-guides/home-guides.component';
+import { HomeComponent } from './home/home.component';
 
 import { DejaAccordionDemoComponent } from './accordion/accordion-demo.component';
 import { DejaCircularPickerDemoComponent } from './circular-picker/circular-picker-demo';

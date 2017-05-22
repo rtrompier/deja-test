@@ -10,7 +10,6 @@
 import { ModuleWithProviders } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from './home/home.component';
 import { DejaAccordionDemoComponent } from './accordion/accordion-demo.component';
 import { DejaCircularPickerDemoComponent } from './circular-picker/circular-picker-demo';
 import { DejaColorSelectorDemoComponent } from './color-selector/color-selector-demo';
@@ -20,6 +19,7 @@ import { DejaColorSelectorDemoComponent } from './color-selector/color-selector-
 // import { GridDemoComponent } from '../grid/grid-demo';
 import { HomeComponentsComponent } from './home-components/home-components.component';
 import { HomeGuidesComponent } from './home-guides/home-guides.component';
+import { HomeComponent } from './home/home.component';
 // import { MenuDemoComponent } from '../menu/menu-demo';
 // import { MessageBoxDemoComponent } from '../message-box/message-box-demo';
 // import { DejaMonacoEditorDemoComponent } from '../monaco-editor/monaco-editor-demo';
