@@ -10,38 +10,49 @@ import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 
-import { 
-    DejaAccordionModule,
-    DejaCodeViewerModule,
-    DejaCircularPickerModule,
-    DejaDateSelectorModule,
-    DejaDatePickerModule,
-    DejaDialogModule,
-    DejaSelectModule,
-    DejaTreeListModule,
-    DejaTilesModule,
-    DejaColorSelectorModule,
-    DejaColorPickerModule,
-    DejaBoldQueryModule,
-    DejaIFrameModule,
-    DejaMarkdownModule,
-    DejaMenuModule,
-    DejaMessageBoxModule,
-    DejaEditableModule,
-    DejaDragDropModule,
-    DejaBackdropModule,
-    DejaGridModule,
-    DejaSortingModule,
-    DejaAutosizeTextAreaModule,
-    DejaMonacoEditorModule,
-    DejaSnackbarModule,
-    DejaRangeModule,
-    DejaSplitterModule,
-    DejaTooltipModule,
-    DejaViewPortModule,
-    DejaChipsModule,
-    DejaMouseDragDropModule,
-} from '../../index';
+// import { 
+//     DejaAccordionModule,
+    // DejaCodeViewerModule,
+    // DejaCircularPickerModule,
+    // DejaDateSelectorModule,
+    // DejaDatePickerModule,
+    // DejaDialogModule,
+    // DejaSelectModule,
+    // DejaTreeListModule,
+    // DejaTilesModule,
+    // DejaColorSelectorModule,
+    // DejaColorPickerModule,
+    // DejaBoldQueryModule,
+    // DejaIFrameModule,
+    // DejaMarkdownModule,
+    // DejaMenuModule,
+    // DejaMessageBoxModule,
+    // DejaEditableModule,
+    // DejaDragDropModule,
+    // DejaBackdropModule,
+    // DejaGridModule,
+    // DejaSortingModule,
+    // DejaAutosizeTextAreaModule,
+    // DejaMonacoEditorModule,
+    // DejaSnackbarModule,
+    // DejaRangeModule,
+    // DejaSplitterModule,
+    // DejaTooltipModule,
+    // DejaViewPortModule,
+    // DejaChipsModule,
+    // DejaMouseDragDropModule,
+// } from '../../dist';
+
+// import { DejaAccordionModule } from '../../src/index'; //Long au build | Long au rebuild
+// import { DejaAccordionModule } from '../../src/component/accordion/index'; //Long au build | rapide au rebuild
+import { DejaAccordionModule } from '../../dist'; //Long au build | Long au rebuild
+
+
+// import { DejaSelectModule } from '../../src/component/select/index';
+// import { DejaMarkdownModule } from '../../src/component/markdown/index';
+// import { DejaMouseDragDropModule } from '../../src/component/mouse-dragdrop/index';
+// import { DejaGridModule } from '../../src/component/data-grid/index';
+
 import { HomeComponent } from './home/home.component';
 import { HomeComponentsComponent } from './home-components/home-components.component';
 import { HomeGuidesComponent } from './home-guides/home-guides.component';
@@ -50,29 +61,29 @@ import { DejaAccordionDemoComponent } from './accordion/accordion-demo.component
 @NgModule({
     declarations: [
         AppComponent,
-        HomeComponent,
-        HomeComponentsComponent,
-        HomeGuidesComponent,
-        DejaAccordionDemoComponent,
+        // HomeComponent,
+        // HomeComponentsComponent,
+        // HomeGuidesComponent,
+        // DejaAccordionDemoComponent,
     ],
     imports: [
         FormsModule,
         HttpModule,
         BrowserModule,
         BrowserAnimationsModule,
-        RouterModule,
-        routing,
+        // RouterModule,
+        // routing,
 
         MaterialModule,
         FlexLayoutModule,
-
+        
         DejaAccordionModule,
-
-        DejaSelectModule,
-        DejaMarkdownModule,
-        DejaMouseDragDropModule.forRoot(),
-        DejaIFrameModule,
-        DejaBackdropModule,
+        // DejaSelectModule,
+        // DejaMarkdownModule,
+        // DejaMouseDragDropModule.forRoot(),
+        // DejaGridModule,
+        // DejaIFrameModule,
+        // DejaBackdropModule,
 
         /*DejaCodeViewerModule,
         DejaCircularPickerModule,
