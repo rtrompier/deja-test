@@ -1,4 +1,3 @@
-import { MaterialColors } from '../../src/common/core/style/material-colors';
 
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -11,6 +10,13 @@ import { RouterModule } from '@angular/router';
 import { routing } from './route';
 
 import { AppComponent } from './app.component';
+
+import { MaterialColors } from '../../src/common/core/style/material-colors';
+import { GlobalEventService } from './../../src/common/global-event/global-event.service';
+import { CountriesListService } from './services/countries-list.service';
+import { CountriesService } from './services/countries.service';
+import { DrugsService } from './services/drugs.service';
+import { NewsService } from './services/news.service';
 
 import {
     DejaAccordionModule,
@@ -53,6 +59,7 @@ import { HomeComponent } from './home/home.component';
 import { DejaAccordionDemoComponent } from './accordion/accordion-demo.component';
 import { DejaCircularPickerDemoComponent } from './circular-picker/circular-picker-demo';
 import { DejaColorSelectorDemoComponent } from './color-selector/color-selector-demo';
+import { DejaContentEditableDemoComponent } from './content-editable/content-editable-demo';
 
 @NgModule({
     declarations: [
@@ -62,7 +69,8 @@ import { DejaColorSelectorDemoComponent } from './color-selector/color-selector-
         HomeGuidesComponent,
         DejaAccordionDemoComponent,
         DejaCircularPickerDemoComponent,
-        DejaColorSelectorDemoComponent
+        DejaColorSelectorDemoComponent,
+        DejaContentEditableDemoComponent,
     ],
     imports: [
         FormsModule,
@@ -107,7 +115,19 @@ import { DejaColorSelectorDemoComponent } from './color-selector/color-selector-
         DejaViewPortModule,
     ],
     providers: [
+        NewsService,
+        CountriesService,
+        CountriesListService,
+        GlobalEventService,
         MaterialColors,
+        DrugsService,
+        // Monaco Editor Resolver Route
+        // MonacoEditorXmlFileResolver,
+        // MonacoEditorXmlToCompareFileResolver,
+        // MonacoEditorJsonFileResolver,
+        // MonacoEditorJsonToCompareFileResolver,
+        // MonacoEditorDemoService,
+        // UserService,
     ],
     bootstrap: [AppComponent]
 })
