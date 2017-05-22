@@ -43,9 +43,9 @@ import { AppComponent } from './app.component';
     // DejaMouseDragDropModule,
 // } from '../../dist';
 
-// import { DejaAccordionModule } from '../../src/index'; //Long au build | Long au rebuild
+import { DejaAccordionModule } from '../../src/index'; //Long au build | Long au rebuild
 // import { DejaAccordionModule } from '../../src/component/accordion/index'; //Long au build | rapide au rebuild
-import { DejaAccordionModule } from '../../dist'; //Long au build | Long au rebuild
+// import { DejaAccordionModule } from '../../dist'; //Long au build | Long au rebuild
 
 
 // import { DejaSelectModule } from '../../src/component/select/index';
