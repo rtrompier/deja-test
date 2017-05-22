@@ -17,53 +17,36 @@ import {
     DejaChipsModule,
     DejaCircularPickerModule,
     DejaCodeViewerModule,
+    DejaColorPickerModule,
     DejaColorSelectorModule,
+    DejaEditableModule,
+    DejaGridModule,
+    DejaDatePickerModule,
+    DejaDateSelectorModule,
+    DejaDialogModule,
+    DejaDragDropModule,
+    DejaDropDownModule,
+    DejaIFrameModule,
+    DejaListLoaderModule,
+    DejaMarkdownModule,
+    DejaMenuModule,
+    DejaMessageBoxModule,
+    DejaMonacoEditorModule,
+    DejaMouseDragDropModule,
+    DejaRangeModule,
+    DejaSelectModule,
+    DejaSnackbarModule,
+    DejaSplitterModule,
+    DejaTilesModule,
+    DejaTooltipModule,
+    DejaTreeListModule,
+    DejaViewPortModule,
+// } from '../../dist';
+} from '../../src/index';
 
-    // DejaDateSelectorModule,
-    // DejaDatePickerModule,
-    // DejaDialogModule,
-    // DejaSelectModule,
-    // DejaTreeListModule,
-    // DejaTilesModule,
-    // DejaEditableModule,
-    // DejaColorPickerModule,
-    // DejaBoldQueryModule,
-    // DejaIFrameModule,
-    // DejaMarkdownModule,
-    // DejaMenuModule,
-    // DejaMessageBoxModule,
-    // DejaEditableModule,
-    // DejaDragDropModule,
-    // DejaGridModule,
-    // DejaSortingModule,
-    // DejaMonacoEditorModule,
-    // DejaSnackbarModule,
-    // DejaRangeModule,
-    // DejaSplitterModule,
-    // DejaTooltipModule,
-    // DejaViewPortModule,
-    // DejaBackdropModule,
-    // DejaMouseDragDropModule,
-    // DejaDragDropModule,
-    // DejaCodeViewerModule,
-} from '../../dist';
-
-// import { DejaAccordionModule } from '../../src/index'; //Long au build | Long au rebuild
-// import { DejaAccordionModule } from '../../src/component/accordion/index'; //Long au build | rapide au rebuild
-// import { DejaAccordionModule } from '../../dist'; //Long au build | Long au rebuild
-
-// import { DejaAutosizeTextAreaModule } from '../../dist';
-
-
-// import { DejaSelectModule } from '../../src/component/select/index';
-// import { DejaMarkdownModule } from '../../src/component/markdown/index';
-// import { DejaMouseDragDropModule } from '../../src/component/mouse-dragdrop/index';
-// import { DejaGridModule } from '../../src/component/data-grid/index';
-
-import { HomeComponent } from './home/home.component';
-import { HomeComponentsComponent } from './home-components/home-components.component';
-import { HomeGuidesComponent } from './home-guides/home-guides.component';
-import { DejaAccordionDemoComponent } from './accordion/accordion-demo.component';
+// import { HomeComponent } from './home/home.component';
+// import { HomeComponentsComponent } from './home-components/home-components.component';
+// import { HomeGuidesComponent } from './home-guides/home-guides.component';
 
 @NgModule({
     declarations: [
@@ -90,45 +73,30 @@ import { DejaAccordionDemoComponent } from './accordion/accordion-demo.component
         DejaChipsModule,
         DejaCircularPickerModule,
         DejaCodeViewerModule,
-        DejaColorSelectorModule,
-
-        // DejaAutosizeTextAreaModule,
-        // DejaSelectModule,
-        // DejaMarkdownModule,
-        // DejaMouseDragDropModule.forRoot(),
-        // DejaGridModule,
-        // DejaIFrameModule,
-        // DejaBackdropModule,
-
-        /*DejaCodeViewerModule,
-        DejaCircularPickerModule,
-        DejaDateSelectorModule,
-        DejaDatePickerModule,
-        DejaDialogModule,
-        DejaSelectModule,
-        DejaTreeListModule,
-        DejaTilesModule,
-        DejaColorSelectorModule,
         DejaColorPickerModule,
-        DejaBoldQueryModule,
+        DejaColorSelectorModule,
+        DejaEditableModule,
+        DejaGridModule,
+        DejaDatePickerModule,
+        DejaDateSelectorModule,
+        DejaDialogModule,
+        DejaDragDropModule,
+        DejaDropDownModule,
         DejaIFrameModule,
+        DejaListLoaderModule,
         DejaMarkdownModule,
         DejaMenuModule,
         DejaMessageBoxModule,
-        DejaEditableModule,
-        DejaDragDropModule,
-        DejaMouseDragDropModule.forRoot(),
-        DejaBackdropModule,
-        DejaGridModule,
-        DejaSortingModule,
-        DejaAutosizeTextAreaModule,
         DejaMonacoEditorModule,
-        DejaSnackbarModule,
+        DejaMouseDragDropModule,
         DejaRangeModule,
+        DejaSelectModule,
+        DejaSnackbarModule,
         DejaSplitterModule,
+        DejaTilesModule,
         DejaTooltipModule,
+        DejaTreeListModule,
         DejaViewPortModule,
-        DejaChipsModule,*/
     ],
     providers: [],
     bootstrap: [AppComponent]
