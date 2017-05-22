@@ -14,7 +14,7 @@ import { DejaAccordionDemoComponent } from './accordion/accordion-demo.component
 import { DejaCircularPickerDemoComponent } from './circular-picker/circular-picker-demo';
 import { DejaColorSelectorDemoComponent } from './color-selector/color-selector-demo';
 import { DejaContentEditableDemoComponent } from './content-editable/content-editable-demo';
-// import { DejaDatePickerDemoComponent } from '../date-picker/date-picker-demo';
+import { DejaDatePickerDemoComponent } from './date-picker/date-picker-demo';
 // import { GlobalEventsDemoComponent } from '../global-events/global-events-demo';
 // import { GridDemoComponent } from '../grid/grid-demo';
 import { HomeComponentsComponent } from './home-components/home-components.component';
@@ -42,7 +42,7 @@ const routes: Routes = [
         { component: DejaCircularPickerDemoComponent, path: 'circular-picker' },
         { component: DejaColorSelectorDemoComponent, path: 'colorselector' },
         { component: DejaContentEditableDemoComponent, path: 'contenteditableselector' },
-        // { component: DejaDatePickerDemoComponent, path: 'date-picker' },
+        { component: DejaDatePickerDemoComponent, path: 'date-picker' },
         // { component: GlobalEventsDemoComponent, path: 'events' },
         // { component: GridDemoComponent, path: 'grid' },
         // { component: MenuDemoComponent, path: 'menu' },

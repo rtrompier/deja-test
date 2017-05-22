@@ -1,4 +1,3 @@
-
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
@@ -60,6 +59,7 @@ import { DejaAccordionDemoComponent } from './accordion/accordion-demo.component
 import { DejaCircularPickerDemoComponent } from './circular-picker/circular-picker-demo';
 import { DejaColorSelectorDemoComponent } from './color-selector/color-selector-demo';
 import { DejaContentEditableDemoComponent } from './content-editable/content-editable-demo';
+import { DejaDatePickerDemoComponent } from './date-picker/date-picker-demo';
 
 @NgModule({
     declarations: [
@@ -71,6 +71,7 @@ import { DejaContentEditableDemoComponent } from './content-editable/content-edi
         DejaCircularPickerDemoComponent,
         DejaColorSelectorDemoComponent,
         DejaContentEditableDemoComponent,
+        DejaDatePickerDemoComponent,
     ],
     imports: [
         FormsModule,
