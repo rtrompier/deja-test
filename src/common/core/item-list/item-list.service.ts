@@ -13,10 +13,13 @@ import 'rxjs/add/operator/reduce';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Observable } from 'rxjs/Observable';
 import { Subscriber } from 'rxjs/Subscriber';
-import { Diacritics } from '../diacritics/index';
-import { GroupingService, IGroupInfo } from '../grouping/index';
-import { ISortInfos, SortingService } from '../sorting/index';
-import { IItemBase, IItemTree } from './index';
+import { Diacritics } from '../diacritics/diacritics';
+import { IGroupInfo } from '../grouping/group-infos';
+import { GroupingService } from '../grouping/grouping.service';
+import { ISortInfos } from '../sorting/sort-infos.model';
+import { SortingService } from '../sorting/sorting.service';
+import { IItemBase } from './item-base';
+import { IItemTree } from './item-tree';
 
 /** Service de gestion des listes (deja-treelist, deja-select et deja-grid).
  * Ce service permet la gestion du viewport et la gestion des caches des listes.

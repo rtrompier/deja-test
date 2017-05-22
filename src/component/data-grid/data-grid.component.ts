@@ -12,14 +12,24 @@ import { Subject } from 'rxjs/Subject';
 import { Subscription } from 'rxjs/Subscription';
 import { DejaClipboardService } from '../../common/core/clipboard/clipboard.service';
 import { GroupingService, IGroupInfo } from '../../common/core/grouping';
-import { IItemBase, IItemTree, ItemListService, ViewportMode } from '../../common/core/item-list/index';
+import { IItemBase } from '../../common/core/item-list/item-base';
+import { ItemListService } from '../../common/core/item-list/item-list.service';
+import { IItemTree } from '../../common/core/item-list/item-tree';
+import { ViewportMode } from '../../common/core/item-list/viewport.service';
 import { KeyCodes } from '../../common/core/keycodes.enum';
 import { SortingService } from '../../common/core/sorting';
 import { IDejaDragEvent } from '../dragdrop';
-import { DejaTreeListComponent, DejaTreeListScrollEvent } from '../tree-list/index';
+import { DejaTreeListScrollEvent } from '../tree-list/tree-list-scroll-event';
+import { DejaTreeListComponent } from '../tree-list/tree-list.component';
 import { ViewPortService } from './../../common/core/item-list/viewport.service';
+import { IDejaGridColumn, IDejaGridColumnEvent, IDejaGridColumnLayoutEvent, IDejaGridColumnSizeEvent } from './data-grid-column/data-grid-column';
+import { IDejaGridColumnLayout } from './data-grid-column/data-grid-column-layout';
+import { DejaGridColumnsLayoutInfos } from './data-grid-column/data-grid-column-layout-infos';
+import { IDejaGridGroupsEvent } from './data-grid-grouparea/data-grid-group';
 import { DejaGridHeaderComponent } from './data-grid-header/data-grid-header.component';
-import { DejaGridColumnsLayoutInfos, DejaGridRowEvent, DejaGridRowsEvent, IDejaGridColumn, IDejaGridColumnEvent, IDejaGridColumnLayout, IDejaGridColumnLayoutEvent, IDejaGridColumnSizeEvent, IDejaGridGroupsEvent, IDejaGridRow } from './index';
+import { IDejaGridRow } from './data-grid-row/data-grid-row';
+import { DejaGridRowEvent } from './data-grid-row/data-grid-row-event';
+import { DejaGridRowsEvent } from './data-grid-row/data-grid-rows-event';
 
 const noop = () => { };
 

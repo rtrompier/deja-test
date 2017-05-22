@@ -10,9 +10,14 @@ import { ChangeDetectorRef, EventEmitter } from '@angular/core';
 import 'rxjs/add/operator/first';
 import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
-import { GroupingService, IGroupInfo } from '../grouping/index';
-import { ISortInfos, SortingService, SortOrder } from '../sorting/index';
-import { IFindItemResult, IItemBase, IItemTree, IParentListInfoResult, ItemListService, IViewListResult, IViewPort, ViewportMode, ViewPortService } from './index';
+import { IGroupInfo } from '../grouping/group-infos';
+import { GroupingService } from '../grouping/grouping.service';
+import { ISortInfos, SortOrder } from '../sorting/sort-infos.model';
+import { SortingService } from '../sorting/sorting.service';
+import { IItemBase } from './item-base';
+import { IFindItemResult, IParentListInfoResult, ItemListService, IViewListResult } from './item-list.service';
+import { IItemTree } from './item-tree';
+import { IViewPort, ViewportMode, ViewPortService } from './viewport.service';
 
 const noop = () => { };
 
