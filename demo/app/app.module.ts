@@ -1,3 +1,5 @@
+import { MaterialColors } from '../../src/common/core/style/material-colors';
+
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { routing } from './route';
 import { RouterModule } from '@angular/router';
@@ -44,25 +46,31 @@ import {
 // } from '../../dist';
 } from '../../src/index';
 
-// import { HomeComponent } from './home/home.component';
-// import { HomeComponentsComponent } from './home-components/home-components.component';
-// import { HomeGuidesComponent } from './home-guides/home-guides.component';
+import { HomeComponent } from './home/home.component';
+import { HomeComponentsComponent } from './home-components/home-components.component';
+import { HomeGuidesComponent } from './home-guides/home-guides.component';
+
+import { DejaAccordionDemoComponent } from './accordion/accordion-demo.component';
+import { DejaCircularPickerDemoComponent } from './circular-picker/circular-picker-demo';
+import { DejaColorSelectorDemoComponent } from './color-selector/color-selector-demo';
 
 @NgModule({
     declarations: [
         AppComponent,
-        // HomeComponent,
-        // HomeComponentsComponent,
-        // HomeGuidesComponent,
-        // DejaAccordionDemoComponent,
+        HomeComponent,
+        HomeComponentsComponent,
+        HomeGuidesComponent,
+        DejaAccordionDemoComponent,
+        DejaCircularPickerDemoComponent,
+        DejaColorSelectorDemoComponent
     ],
     imports: [
         FormsModule,
         HttpModule,
         BrowserModule,
         BrowserAnimationsModule,
-        // RouterModule,
-        // routing,
+        RouterModule,
+        routing,
 
         MaterialModule,
         FlexLayoutModule,
@@ -98,7 +106,9 @@ import {
         DejaTreeListModule,
         DejaViewPortModule,
     ],
-    providers: [],
+    providers: [
+        MaterialColors,
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
