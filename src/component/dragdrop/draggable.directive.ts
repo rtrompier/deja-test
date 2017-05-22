@@ -8,8 +8,8 @@
 
 import { Directive, ElementRef, HostBinding, Input, Optional } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { UUID } from '../../common/core/UUID';
 import { DejaClipboardService } from '../../common/core/clipboard/clipboard.service';
+import { UUID } from '../../common/core/UUID';
 
 @Directive({
     selector: '[deja-draggable]',
@@ -54,8 +54,10 @@ export class DejaDraggableDirective {
 
                 this.clipboardService.set(this.draginfokey, dragInfos);
 
+                let data = 'notavailable';
                 if (object) {
                     object.dragged = true;
+                    data = JSON.stringify(data);
                 }
 
                 if (this.context && this.context.dragstartcallback) {
@@ -64,7 +66,7 @@ export class DejaDraggableDirective {
                     e.dragObject = this.context.object;
                     e.dragElement = element;
                     this.context.dragstartcallback(e);
-
+                    event.dataTransfer.setData('text/plain', data);
                     if (e.defaultPrevented) {
                         event.preventDefault();
                     }

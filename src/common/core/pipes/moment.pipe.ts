@@ -7,7 +7,7 @@
  */
 
 import { Pipe, PipeTransform} from '@angular/core';
-import moment from 'moment/src/moment';
+import * as moment from 'moment';
 
 @Pipe({ name: 'stringToDateFormat' })
 export class StringToDateFormatPipe implements PipeTransform {
