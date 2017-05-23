@@ -5,7 +5,7 @@ SOURCE_BRANCH="master"
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
 if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]; then
-    echo "Skipping deploy; just doing a build."
+    echo "Skipping deploy on Github Pages; just doing a build."
     exit 0
 fi
 
@@ -19,4 +19,4 @@ rm -rf dist
 npm run build:prod
 
 # Deploy dist directory into th GH-PAGES branch
-gh-pages -d dist --repo https://rtrompier:${GITHUB_TOKEN}@github.com/DSI-HUG/dejajs-components.git
+gh-pages -d dist-demo --repo https://rtrompier:${GITHUB_TOKEN}@github.com/DSI-HUG/dejajs-components.git

@@ -20,7 +20,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --prod",
+    "build:prod": "ng build --env=prod --base-href https://dsi-hug.github.io/dejajs-components/",
     "build:lib": "gulp build",
     "build:lib:watch": "gulp",
     "test": "ng test",
