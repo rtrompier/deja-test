@@ -7,7 +7,7 @@
  */
 
 import { ChangeDetectorRef, NgZone, Pipe, PipeTransform } from '@angular/core';
-import moment from 'moment/src/moment';
+import * as moment from 'moment';
 import 'rxjs/add/operator/debounce';
 import { Observable } from 'rxjs/Observable';
 import { Subject } from 'rxjs/Subject';

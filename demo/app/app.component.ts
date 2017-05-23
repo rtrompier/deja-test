@@ -34,9 +34,6 @@ export class AppComponent {
 
     constructor (elementRef: ElementRef) {
         const elem = elementRef.nativeElement as HTMLElement;
-
-        console.log('bonjour 9');
-
         Observable.from(this.theme$).subscribe((theme) => elem.setAttribute('theme', theme.value) );
     }
 
