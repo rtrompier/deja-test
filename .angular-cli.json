@@ -9,7 +9,8 @@
             "outDir": "dist-demo",
             "assets": [
                 "assets",
-                "favicon.ico"
+                "favicon.ico",
+                "vs"
             ],
             "index": "index.html",
             "main": "main.ts",
