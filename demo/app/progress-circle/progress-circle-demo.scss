@@ -1,0 +1,11 @@
+md-card-content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+
+    md-progress-spinner, md-progress-bar {
+        margin: 20px;
+    }
+}
+

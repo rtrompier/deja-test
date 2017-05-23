@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
+import { StoreModule } from '@ngrx/store';
 import { routing } from './route';
 
 import { AppComponent } from './app.component';
@@ -14,6 +15,8 @@ import { GroupingModule } from '../../src/common/core/grouping/index';
 import { MaterialColors } from '../../src/common/core/style/material-colors';
 import { GlobalEventService } from './../../src/common/global-event/global-event.service';
 import { NewsCardComponent } from './common/news-card.component';
+import { userReducer } from './reactive-form/model/user.reducer';
+import { UserService } from './reactive-form/service/user.service';
 import { CountriesListService } from './services/countries-list.service';
 import { CountriesService } from './services/countries.service';
 import { DrugsService } from './services/drugs.service';
@@ -69,6 +72,9 @@ import { GridDemoComponent } from './grid/grid-demo';
 import { MenuDemoComponent } from './menu/menu-demo';
 import { MessageBoxDemoComponent } from './message-box/message-box-demo';
 import { DejaMonacoEditorDemoComponent } from './monaco-editor/monaco-editor-demo';
+import { ProgressCircleDemoComponent } from './progress-circle/progress-circle-demo';
+import { DejaRangeDemoComponent } from './range/range-demo';
+import { ReactiveFormDemoComponent } from './reactive-form/reactive-form-demo';
 import { DejaTreeListDemoComponent } from './tree-list/tree-list-demo';
 
 import { MonacoEditorDemoService } from './monaco-editor/monaco-editor-demo.service.';
@@ -90,11 +96,15 @@ import { MonacoEditorJsonFileResolver, MonacoEditorJsonToCompareFileResolver, Mo
         MenuDemoComponent,
         MessageBoxDemoComponent,
         DejaMonacoEditorDemoComponent,
+        ProgressCircleDemoComponent,
+        DejaRangeDemoComponent,
+        ReactiveFormDemoComponent,
         DejaTreeListDemoComponent,
         NewsCardComponent,
     ],
     imports: [
         FormsModule,
+        ReactiveFormsModule,
         HttpModule,
         BrowserModule,
         BrowserAnimationsModule,
@@ -137,6 +147,9 @@ import { MonacoEditorJsonFileResolver, MonacoEditorJsonToCompareFileResolver, Mo
         DejaTreeListModule,
         DejaViewPortModule,
         GroupingModule,
+        StoreModule.provideStore({
+            user: userReducer,
+        })
     ],
     providers: [
         CountriesService,
@@ -151,6 +164,7 @@ import { MonacoEditorJsonFileResolver, MonacoEditorJsonToCompareFileResolver, Mo
         MonacoEditorJsonFileResolver,
         MonacoEditorJsonToCompareFileResolver,
         MonacoEditorDemoService,
+        UserService,
     ],
     bootstrap: [AppComponent]
 })

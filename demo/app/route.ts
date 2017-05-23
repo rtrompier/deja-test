@@ -24,9 +24,9 @@ import { MenuDemoComponent } from './menu/menu-demo';
 import { MessageBoxDemoComponent } from './message-box/message-box-demo';
 import { DejaMonacoEditorDemoComponent } from './monaco-editor/monaco-editor-demo';
 import { MonacoEditorJsonFileResolver, MonacoEditorJsonToCompareFileResolver, MonacoEditorXmlFileResolver, MonacoEditorXmlToCompareFileResolver } from './monaco-editor/monaco-editor.resolver';
-// import { ProgressCircleDemoComponent } from '../progress-circle/progress-circle-demo';
-// import { DejaRangeDemoComponent } from '../range/range-demo';
-// import { ReactiveFormDemoComponent } from '../reactive-form/reactive-form-demo';
+import { ProgressCircleDemoComponent } from './progress-circle/progress-circle-demo';
+import { DejaRangeDemoComponent } from './range/range-demo';
+import { ReactiveFormDemoComponent } from './reactive-form/reactive-form-demo';
 // import { SelectDemoComponent } from '../select/select-demo';
 // import { DejaSnackbarDemoComponent } from '../snackbar/snackbar-demo';
 // import { DejaSplitterDemoComponent } from '../splitter/splitter-demo';
@@ -55,14 +55,14 @@ const routes: Routes = [
                 xmlToCompareFile: MonacoEditorXmlToCompareFileResolver,
             }
         },
-        // { component: ReactiveFormDemoComponent, path: 'reactive-form' },
+        { component: ProgressCircleDemoComponent, path: 'progress-circle' },
+        { component: DejaRangeDemoComponent, path: 'range' },
+        { component: ReactiveFormDemoComponent, path: 'reactive-form' },
         // { component: SelectDemoComponent, path: 'select' },
         // { component: TextAreaDemoComponent, path: 'textarea' },
         // { component: TilesDemoComponent, path: 'tiles' },
         { component: DejaTreeListDemoComponent, path: 'tree-list' },
-        // { component: ProgressCircleDemoComponent, path: 'progress-circle' },
         // { component: DejaSnackbarDemoComponent, path: 'snackbar' },
-        // { component: DejaRangeDemoComponent, path: 'range' },
         // { component: DejaSplitterDemoComponent, path: 'splitter' },
         // { component: DejaViewPortDemoComponent, path: 'viewport' },
         { path: '**', pathMatch: 'prefix', redirectTo: 'accordion'},
