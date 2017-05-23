@@ -27,8 +27,8 @@ import { MonacoEditorJsonFileResolver, MonacoEditorJsonToCompareFileResolver, Mo
 import { ProgressCircleDemoComponent } from './progress-circle/progress-circle-demo';
 import { DejaRangeDemoComponent } from './range/range-demo';
 import { ReactiveFormDemoComponent } from './reactive-form/reactive-form-demo';
-// import { SelectDemoComponent } from '../select/select-demo';
-// import { DejaSnackbarDemoComponent } from '../snackbar/snackbar-demo';
+import { SelectDemoComponent } from './select/select-demo';
+import { DejaSnackbarDemoComponent } from './snackbar/snackbar-demo';
 // import { DejaSplitterDemoComponent } from '../splitter/splitter-demo';
 // import { TextAreaDemoComponent } from '../textarea/textarea-demo';
 // import { TilesDemoComponent } from '../tiles/tiles-demo';
@@ -58,11 +58,11 @@ const routes: Routes = [
         { component: ProgressCircleDemoComponent, path: 'progress-circle' },
         { component: DejaRangeDemoComponent, path: 'range' },
         { component: ReactiveFormDemoComponent, path: 'reactive-form' },
-        // { component: SelectDemoComponent, path: 'select' },
+        { component: SelectDemoComponent, path: 'select' },
+        { component: DejaSnackbarDemoComponent, path: 'snackbar' },
         // { component: TextAreaDemoComponent, path: 'textarea' },
         // { component: TilesDemoComponent, path: 'tiles' },
         { component: DejaTreeListDemoComponent, path: 'tree-list' },
-        // { component: DejaSnackbarDemoComponent, path: 'snackbar' },
         // { component: DejaSplitterDemoComponent, path: 'splitter' },
         // { component: DejaViewPortDemoComponent, path: 'viewport' },
         { path: '**', pathMatch: 'prefix', redirectTo: 'accordion'},

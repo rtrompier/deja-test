@@ -75,6 +75,8 @@ import { DejaMonacoEditorDemoComponent } from './monaco-editor/monaco-editor-dem
 import { ProgressCircleDemoComponent } from './progress-circle/progress-circle-demo';
 import { DejaRangeDemoComponent } from './range/range-demo';
 import { ReactiveFormDemoComponent } from './reactive-form/reactive-form-demo';
+import { SelectDemoComponent } from './select/select-demo';
+import { DejaSnackbarDemoComponent } from './snackbar/snackbar-demo';
 import { DejaTreeListDemoComponent } from './tree-list/tree-list-demo';
 
 import { MonacoEditorDemoService } from './monaco-editor/monaco-editor-demo.service.';
@@ -99,6 +101,8 @@ import { MonacoEditorJsonFileResolver, MonacoEditorJsonToCompareFileResolver, Mo
         ProgressCircleDemoComponent,
         DejaRangeDemoComponent,
         ReactiveFormDemoComponent,
+        SelectDemoComponent,
+        DejaSnackbarDemoComponent,
         DejaTreeListDemoComponent,
         NewsCardComponent,
     ],
