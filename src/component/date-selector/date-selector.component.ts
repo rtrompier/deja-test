@@ -364,7 +364,7 @@ export class DejaDateSelectorComponent implements AfterContentInit, ControlValue
                 if (typeof d === 'number') {
                     return d === date.getDay();
                 } else {
-                    return false // d.toLocaleDateString() === date.toLocaleDateString();
+                    return d.toLocaleDateString() === date.toLocaleDateString();
                 }
             });
 
