@@ -29,11 +29,11 @@ import { DejaRangeDemoComponent } from './range/range-demo';
 import { ReactiveFormDemoComponent } from './reactive-form/reactive-form-demo';
 import { SelectDemoComponent } from './select/select-demo';
 import { DejaSnackbarDemoComponent } from './snackbar/snackbar-demo';
-// import { DejaSplitterDemoComponent } from '../splitter/splitter-demo';
-// import { TextAreaDemoComponent } from '../textarea/textarea-demo';
-// import { TilesDemoComponent } from '../tiles/tiles-demo';
+import { DejaSplitterDemoComponent } from './splitter/splitter-demo';
+import { TextAreaDemoComponent } from './textarea/textarea-demo';
+import { TilesDemoComponent } from './tiles/tiles-demo';
 import { DejaTreeListDemoComponent } from './tree-list/tree-list-demo';
-// import { DejaViewPortDemoComponent } from '../viewport/viewport-demo';
+import { DejaViewPortDemoComponent } from './viewport/viewport-demo';
 
 const routes: Routes = [
     { component: HomeComponent, path: '' },
@@ -60,11 +60,11 @@ const routes: Routes = [
         { component: ReactiveFormDemoComponent, path: 'reactive-form' },
         { component: SelectDemoComponent, path: 'select' },
         { component: DejaSnackbarDemoComponent, path: 'snackbar' },
-        // { component: TextAreaDemoComponent, path: 'textarea' },
-        // { component: TilesDemoComponent, path: 'tiles' },
+        { component: DejaSplitterDemoComponent, path: 'splitter' },
+        { component: TextAreaDemoComponent, path: 'textarea' },
+        { component: TilesDemoComponent, path: 'tiles' },
         { component: DejaTreeListDemoComponent, path: 'tree-list' },
-        // { component: DejaSplitterDemoComponent, path: 'splitter' },
-        // { component: DejaViewPortDemoComponent, path: 'viewport' },
+        { component: DejaViewPortDemoComponent, path: 'viewport' },
         { path: '**', pathMatch: 'prefix', redirectTo: 'accordion'},
     ]},
     { component: HomeGuidesComponent, path: 'guides' },

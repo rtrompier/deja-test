@@ -1,0 +1,9 @@
+.demo-card {
+	display: flex;
+	justify-content: left;
+	margin-top: 15px;
+	flex-direction: column;
+	md-input-container {
+		width: 60%;
+	}
+}
