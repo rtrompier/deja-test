@@ -10,8 +10,10 @@ import { routing } from './route';
 
 import { AppComponent } from './app.component';
 
+import { GroupingModule } from '../../src/common/core/grouping/index';
 import { MaterialColors } from '../../src/common/core/style/material-colors';
 import { GlobalEventService } from './../../src/common/global-event/global-event.service';
+import { NewsCardComponent } from './common/news-card.component';
 import { CountriesListService } from './services/countries-list.service';
 import { CountriesService } from './services/countries.service';
 import { DrugsService } from './services/drugs.service';
@@ -23,6 +25,7 @@ import {
     DejaBackdropModule,
     DejaChipsModule,
     DejaCircularPickerModule,
+    DejaClipboardModule,
     DejaCodeViewerModule,
     DejaColorPickerModule,
     DejaColorSelectorModule,
@@ -43,6 +46,7 @@ import {
     DejaRangeModule,
     DejaSelectModule,
     DejaSnackbarModule,
+    DejaSortingModule,
     DejaSplitterModule,
     DejaTilesModule,
     DejaTooltipModule,
@@ -60,6 +64,9 @@ import { DejaCircularPickerDemoComponent } from './circular-picker/circular-pick
 import { DejaColorSelectorDemoComponent } from './color-selector/color-selector-demo';
 import { DejaContentEditableDemoComponent } from './content-editable/content-editable-demo';
 import { DejaDatePickerDemoComponent } from './date-picker/date-picker-demo';
+import { GlobalEventsDemoComponent } from './global-events/global-events-demo';
+import { GridDemoComponent } from './grid/grid-demo';
+import { DejaTreeListDemoComponent } from './tree-list/tree-list-demo';
 
 @NgModule({
     declarations: [
@@ -72,6 +79,10 @@ import { DejaDatePickerDemoComponent } from './date-picker/date-picker-demo';
         DejaColorSelectorDemoComponent,
         DejaContentEditableDemoComponent,
         DejaDatePickerDemoComponent,
+        GlobalEventsDemoComponent,
+        GridDemoComponent,
+        DejaTreeListDemoComponent,
+        NewsCardComponent,
     ],
     imports: [
         FormsModule,
@@ -89,6 +100,7 @@ import { DejaDatePickerDemoComponent } from './date-picker/date-picker-demo';
         DejaBackdropModule,
         DejaChipsModule,
         DejaCircularPickerModule,
+        DejaClipboardModule,
         DejaCodeViewerModule,
         DejaColorPickerModule,
         DejaColorSelectorModule,
@@ -105,30 +117,31 @@ import { DejaDatePickerDemoComponent } from './date-picker/date-picker-demo';
         DejaMenuModule,
         DejaMessageBoxModule,
         DejaMonacoEditorModule,
-        DejaMouseDragDropModule,
+        DejaMouseDragDropModule.forRoot(),
         DejaRangeModule,
         DejaSelectModule,
         DejaSnackbarModule,
+        DejaSortingModule,
         DejaSplitterModule,
         DejaTilesModule,
         DejaTooltipModule,
         DejaTreeListModule,
         DejaViewPortModule,
+        GroupingModule,
     ],
     providers: [
-        NewsService,
         CountriesService,
         CountriesListService,
+        DrugsService,
         GlobalEventService,
         MaterialColors,
-        DrugsService,
+        NewsService,
         // Monaco Editor Resolver Route
         // MonacoEditorXmlFileResolver,
         // MonacoEditorXmlToCompareFileResolver,
         // MonacoEditorJsonFileResolver,
         // MonacoEditorJsonToCompareFileResolver,
         // MonacoEditorDemoService,
-        // UserService,
     ],
     bootstrap: [AppComponent]
 })
