@@ -15,9 +15,10 @@ import { IItemBase } from '../../../src/common/core/item-list/item-base';
 import { IItemTree } from '../../../src/common/core/item-list/item-tree';
 import { IViewPortItem } from '../../../src/common/core/item-list/viewport.service';
 import { DejaSelectComponent } from '../../../src/component/select/select.component';
+import { INews } from '../common/news.model';
 import { CountriesListService } from '../services/countries-list.service';
 import { CountriesService, ICountry } from '../services/countries.service';
-import { INews, NewsService } from '../services/news.service';
+import { NewsService } from '../services/news.service';
 
 @Component({
     encapsulation: ViewEncapsulation.None,

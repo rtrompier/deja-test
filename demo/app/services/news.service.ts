@@ -10,6 +10,7 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/publishLast';
 import { Observable } from 'rxjs/Observable';
+import { INews, INewsArticles, INewsSource, INewsSources } from '../common/news.model';
 
 @Injectable()
 export class NewsService {
@@ -48,33 +49,4 @@ export class NewsService {
                 return returnNews;
             });
     }
-}
-
-export interface INewsSources {
-    status: string;
-    sources: INewsSource[];
-}
-
-export interface INewsSource {
-    id: string;
-    name: string;
-    category: string;
-    language: string;
-    country: string;
-    sortBysAvailable: string[];
-}
-
-export interface INewsArticles {
-    status: string;
-    sources: string;
-    articles: INews[];
-}
-
-export interface INews {
-    author: string;
-    title: string;
-    description: string;
-    url: string;
-    urlToImage: string;
-    publishedAt: string;
 }

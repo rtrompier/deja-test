@@ -11,7 +11,8 @@ import { Observable } from 'rxjs/Observable';
 import { IViewPortItem } from '../../../src/common/core/item-list/viewport.service';
 import { IEditorLanguage } from '../../../src/component/monaco-editor/options/editor-language.model';
 import { DejaViewPortComponent } from '../../../src/component/viewport/viewport.component';
-import { INews, NewsService } from '../services/news.service';
+import { INews } from '../common/news.model';
+import { NewsService } from '../services/news.service';
 
 @Component({
     selector: 'deja-viewport-demo',

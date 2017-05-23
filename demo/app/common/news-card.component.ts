@@ -7,7 +7,7 @@
  */
 
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { INews } from '../services/news.service';
+import { INews } from './news.model';
 
 @Component({
     selector: 'news-card',
