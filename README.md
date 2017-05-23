@@ -1,28 +1,64 @@
-# DejajsComponent
+[![npm version](https://badge.fury.io/js/%40deja-js%2Fcomponent.svg)](https://www.npmjs.com/package/@deja-js/component)
+[![travis build](https://travis-ci.org/DSI-HUG/dejajs-components.svg?branch=master)](https://travis-ci.org/DSI-HUG/dejajs-components)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
+# @deja-js/component
+This is the home for the Hôpitaux Universitaires de Genève - DSI - Domaine Patient team's Angular2 components for Angular 2 and material. 
 
-## Development server
+Online demo : [https://dsi-hug.github.io/dejajs-components](https://dsi-hug.github.io/dejajs-components)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Intro
 
-## Code scaffolding
+This repository is a Angular2 components library and the the common utility functions, with a demo application to testing it.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+### Node.js and npm
 
-## Build
+Node.js and Node's package manager, npm, are used for installing dependencies,
+running the build steps, and running tests.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+### Getting started 
 
-## Running unit tests
+Begin by cloning the repository.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Use npm to get dependencies:
 
-## Running end-to-end tests
+`npm install`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+Take a look at the `src` folder. All components and demo application are placed here. 
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Running demo app 
+
+`npm start`
+
+and navigate to `http://localhost:5100`.
+
+
+## Feature status and browsers compatibility:
+
+| Feature            | Working OnPush | Required / Disabled | Chrome 56 | Edge | IE11 | FF51 | Opera Neon | Readme and Demo | Note           |
+|--------------------|----------------|---------------------|-----------|------|------|------|------------|-----------------|----------------|
+| Accordion          |             yes|                  N/A|        yes|   yes|   yes|   yes|         yes|        available|                |
+| Auto-Size TextArea |             yes|                  N/A|        yes|   yes|   yes|   yes|         yes|<span style="color:red">@todo</span>| |
+| Circular Picker    |             yes|                @todo|yes|yes|yes|yes|yes|available| |
+| Color Selector     |             yes|                  yes|yes|yes|yes|yes|yes|available| |
+| Color Picker       |             yes|                  yes|yes|yes|yes|yes|yes|available| |
+| Content Editable   |             yes|                  yes|yes|yes|yes|yes|yes|available|New line issue on IE11. IE11 add p instead br |
+| Date Selector      |             yes|                @todo|yes|yes|yes|yes|yes|available| |
+| Date Picker        |             yes|                @todo|yes|yes|yes|yes|yes|available| |
+| Dialog             |             yes|                  N/A|yes|yes|yes|yes|yes|Message Box| |
+| Events             |             yes|                  N/A|yes|yes|yes|yes|yes|<span style="color:red">@todo</span>| |
+| Grid               |             yes|                  N/A|yes|yes|yes|yes|yes|available| |
+| Dropdown Control   |             yes|                  N/A|yes|yes|yes|yes|yes|Color Picker| |
+| Menu               |             yes|                  N/A|yes|yes|yes|yes|yes|<span style="color:red">@todo</span>| |
+| Message Box        |             yes|                  N/A|yes|yes|yes|yes|yes|available| |
+| Monaco Editor      |             yes|                  N/A|yes|yes|yes|yes|yes|available| |
+| Range              |             yes|                  yes|yes|yes|yes|yes|yes|available| |
+| Select             |             yes|                  yes|yes|yes|yes|yes|yes|available|Place Holder placement in FF, Edge and IE11 |
+| Snackbar           |             yes|                  N/A|yes|yes|yes|yes|yes|available| |
+| Splitter           |             yes|                  N/A|yes|yes|yes|yes|yes|available| |
+| Tiles              |             yes|                  N/A|yes|yes|yes|yes|yes|<span style="color:red">@todo</span>| |
+| Tooltip            |             yes|                  N/A|yes|yes|yes|yes|yes|Message Box| |
+| Treelist           |             yes|                  yes|yes|yes|yes|yes|yes|available| |
+| Viewport           |             yes|                  N/A|yes|yes|yes|yes|yes|yes| |

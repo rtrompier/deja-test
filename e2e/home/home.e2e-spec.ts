@@ -1,14 +1,14 @@
-import { DejajsComponentPage } from './app.po';
+import { HomePage } from './home.po';
 
 describe('dejajs-component App', () => {
-  let page: DejajsComponentPage;
+    let page: HomePage;
 
-  beforeEach(() => {
-    page = new DejajsComponentPage();
-  });
+    beforeEach(() => {
+        page = new HomePage();
+    });
 
-  it('should display message saying app works', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
-  });
+    it('should display DEJA JS title', () => {
+        page.navigateTo();
+        expect(page.getTitleText()).toEqual('DEJA JS Components');
+    });
 });

@@ -13,7 +13,7 @@ fi
 yarn global add gh-pages
 
 # Clean dist existing contents
-rm -rf dist
+rm -rf dist-prod
 
 # Run our compile script
 npm run build:prod
