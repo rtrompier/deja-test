@@ -19,9 +19,10 @@ import { IDropCursorInfos } from '../../../src/component/mouse-dragdrop/mouse-dr
 import { IDejaMouseDraggableContext } from '../../../src/component/mouse-dragdrop/mouse-draggable.directive';
 import { IDejaMouseDroppableContext } from '../../../src/component/mouse-dragdrop/mouse-droppable.directive';
 import { DejaTreeListComponent } from '../../../src/component/tree-list/tree-list.component';
+import { INews } from '../common/news.model';
 import { CountriesListService } from '../services/countries-list.service';
 import { CountriesService, ICountry } from '../services/countries.service';
-import { INews, NewsService } from '../services/news.service';
+import { NewsService } from '../services/news.service';
 
 @Component({
     encapsulation: ViewEncapsulation.None,

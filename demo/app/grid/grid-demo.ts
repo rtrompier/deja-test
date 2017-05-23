@@ -14,8 +14,9 @@ import { IDejaGridColumn, IDejaGridColumnSizeEvent } from '../../../src/componen
 import { DejaGridRowsEvent } from '../../../src/component/data-grid/data-grid-row/data-grid-rows-event';
 import { DejaGridComponent } from '../../../src/component/data-grid/data-grid.component';
 import { IDejaDragEvent } from '../../../src/component/dragdrop/draggable.directive';
+import { INews } from '../common/news.model';
 import { DrugsService, IDrug } from '../services/drugs.service';
-import { INews, NewsService } from '../services/news.service';
+import { NewsService } from '../services/news.service';
 import { IExtendedViewPortItem } from '../tree-list/tree-list-demo';
 
 @Component({
