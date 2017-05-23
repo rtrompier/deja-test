@@ -6,7 +6,9 @@ var gulp = require('gulp'),
   rename = require('gulp-rename'),
   del = require('del'),
   runSequence = require('run-sequence'),
-  inlineResources = require('./tools/gulp/inline-resources');
+  inlineResources = require('./tools/gulp/inline-resources'),
+  fs = require('fs'),
+  jeditor = require("gulp-json-editor");
 
 const rootFolder = path.join(__dirname);
 const srcFolder = path.join(rootFolder, 'src');
@@ -175,6 +177,19 @@ gulp.task('copy:scss', function () {
  */
 gulp.task('copy:manifest', function () {
   return gulp.src([`${srcFolder}/package.json`])
+  .pipe(jeditor(function(json) {
+      var package = JSON.parse(fs.readFileSync(path.join(rootFolder, 'package.json')));
+      json.dependencies = package.dependencies;
+      return json;
+    }))
+    .pipe(gulp.dest(distFolder));
+});
+
+/**
+ * Copy sendAction to /dist
+ */
+gulp.task('copy:sendAction', function () {
+  return gulp.src([path.join(rootFolder, 'send-action.js')])
     .pipe(gulp.dest(distFolder));
 });
 
@@ -212,6 +227,7 @@ gulp.task('compile', function () {
     'copy:build',
     'copy:manifest',
     'copy:readme',
+    'copy:sendAction',
     'clean:build',
     'clean:tmp',
     function (err) {
