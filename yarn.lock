@@ -193,7 +193,13 @@
   version "2.5.47"
   resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-2.5.47.tgz#bbba9bcf0e95e7890c6f4a47394e8bacaa960eb6"
 
-"@types/node@7.0.22":
+"@types/mz@0.0.30":
+  version "0.0.30"
+  resolved "https://registry.yarnpkg.com/@types/mz/-/mz-0.0.30.tgz#58daa9f35811d607037bab1f9cc7d4a23e6aafae"
+  dependencies:
+    "@types/node" "*"
+
+"@types/node@*", "@types/node@7.0.22", "@types/node@^7.0.4":
   version "7.0.22"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-7.0.22.tgz#4593f4d828bdd612929478ea40c67b4f403ca255"
 
@@ -311,6 +317,10 @@ ansi-regex@^2.0.0:
 ansi-styles@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe"
+
+any-promise@^1.0.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/any-promise/-/any-promise-1.3.0.tgz#abc6afeedcea52e809cdc0376aed3ce39635d17f"
 
 anymatch@^1.3.0:
   version "1.3.0"
@@ -3141,6 +3151,10 @@ is-windows@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/is-windows/-/is-windows-0.2.0.tgz#de1aa6d63ea29dd248737b69f1ff8b8002d2108c"
 
+is-windows@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/is-windows/-/is-windows-1.0.1.tgz#310db70f742d259a16a369202b51af84233310d9"
+
 is-wsl@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-wsl/-/is-wsl-1.1.0.tgz#1f16e4aa22b04d1336b66188a66af3c600c3a66d"
@@ -4040,7 +4054,13 @@ mixin-object@^2.0.1:
     for-in "^0.1.3"
     is-extendable "^0.1.1"
 
-mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1:
+mkdirp-promise@^5.0.0:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/mkdirp-promise/-/mkdirp-promise-5.0.1.tgz#e9b8f68e552c68a9c1713b84883f7a1dd039b8a1"
+  dependencies:
+    mkdirp "*"
+
+mkdirp@*, mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
@@ -4049,10 +4069,6 @@ mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkd
 moment@2.18.1:
   version "2.18.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.18.1.tgz#c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f"
-
-monaco-editor@0.8.3:
-  version "0.8.3"
-  resolved "https://registry.yarnpkg.com/monaco-editor/-/monaco-editor-0.8.3.tgz#523bdf2d1524db2c2dfc3cae0a7b6edc48d6dea6"
 
 morgan@^1.6.1:
   version "1.8.1"
@@ -4085,6 +4101,14 @@ multipipe@^0.1.2:
 mute-stream@0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
+
+mz@^2.4.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/mz/-/mz-2.6.0.tgz#c8b8521d958df0a4f2768025db69c719ee4ef1ce"
+  dependencies:
+    any-promise "^1.0.0"
+    object-assign "^4.0.1"
+    thenify-all "^1.0.0"
 
 nan@^2.3.0, nan@^2.3.2:
   version "2.6.2"
@@ -5972,6 +5996,18 @@ symbol@^0.2.1:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/symbol/-/symbol-0.2.3.tgz#3b9873b8a901e47c6efe21526a3ac372ef28bbc7"
 
+symlink-dir@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/symlink-dir/-/symlink-dir-1.0.2.tgz#04f0bdc7f5df75ab1e98017e2f1b0a6777525a82"
+  dependencies:
+    "@types/mz" "0.0.30"
+    "@types/node" "^7.0.4"
+    graceful-fs "^4.1.11"
+    is-windows "^1.0.0"
+    mkdirp "^0.5.1"
+    mkdirp-promise "^5.0.0"
+    mz "^2.4.0"
+
 tapable@^0.2.5, tapable@~0.2.5:
   version "0.2.6"
   resolved "https://registry.yarnpkg.com/tapable/-/tapable-0.2.6.tgz#206be8e188860b514425375e6f1ae89bfb01fd8d"
@@ -6013,6 +6049,18 @@ term-size@^0.1.0:
 text-mask-core@^5.0.0:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/text-mask-core/-/text-mask-core-5.0.1.tgz#86db742bdfe3b4c383bb51a3b4ca342c86110639"
+
+thenify-all@^1.0.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/thenify-all/-/thenify-all-1.6.0.tgz#1a1918d402d8fc3f98fbf234db0bcc8cc10e9726"
+  dependencies:
+    thenify ">= 3.1.0 < 4"
+
+"thenify@>= 3.1.0 < 4":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/thenify/-/thenify-3.3.0.tgz#e69e38a1babe969b0108207978b9f62b88604839"
+  dependencies:
+    any-promise "^1.0.0"
 
 through2-filter@^2.0.0:
   version "2.0.0"

@@ -27,7 +27,6 @@
         "docs:serve": "yarn run docs:build -- -s",
         "docs:watch": "yarn run docs:build -- -s -w",
         "e2e": "ng e2e",
-        "install": "yarn install",
         "licensecheck": "license-check",
         "lint": "ng lint",
         "ng": "ng",
