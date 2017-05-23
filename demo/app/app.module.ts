@@ -66,7 +66,13 @@ import { DejaContentEditableDemoComponent } from './content-editable/content-edi
 import { DejaDatePickerDemoComponent } from './date-picker/date-picker-demo';
 import { GlobalEventsDemoComponent } from './global-events/global-events-demo';
 import { GridDemoComponent } from './grid/grid-demo';
+import { MenuDemoComponent } from './menu/menu-demo';
+import { MessageBoxDemoComponent } from './message-box/message-box-demo';
+import { DejaMonacoEditorDemoComponent } from './monaco-editor/monaco-editor-demo';
 import { DejaTreeListDemoComponent } from './tree-list/tree-list-demo';
+
+import { MonacoEditorDemoService } from './monaco-editor/monaco-editor-demo.service.';
+import { MonacoEditorJsonFileResolver, MonacoEditorJsonToCompareFileResolver, MonacoEditorXmlFileResolver, MonacoEditorXmlToCompareFileResolver } from './monaco-editor/monaco-editor.resolver';
 
 @NgModule({
     declarations: [
@@ -81,6 +87,9 @@ import { DejaTreeListDemoComponent } from './tree-list/tree-list-demo';
         DejaDatePickerDemoComponent,
         GlobalEventsDemoComponent,
         GridDemoComponent,
+        MenuDemoComponent,
+        MessageBoxDemoComponent,
+        DejaMonacoEditorDemoComponent,
         DejaTreeListDemoComponent,
         NewsCardComponent,
     ],
@@ -137,11 +146,11 @@ import { DejaTreeListDemoComponent } from './tree-list/tree-list-demo';
         MaterialColors,
         NewsService,
         // Monaco Editor Resolver Route
-        // MonacoEditorXmlFileResolver,
-        // MonacoEditorXmlToCompareFileResolver,
-        // MonacoEditorJsonFileResolver,
-        // MonacoEditorJsonToCompareFileResolver,
-        // MonacoEditorDemoService,
+        MonacoEditorXmlFileResolver,
+        MonacoEditorXmlToCompareFileResolver,
+        MonacoEditorJsonFileResolver,
+        MonacoEditorJsonToCompareFileResolver,
+        MonacoEditorDemoService,
     ],
     bootstrap: [AppComponent]
 })

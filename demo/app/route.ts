@@ -20,10 +20,10 @@ import { GridDemoComponent } from './grid/grid-demo';
 import { HomeComponentsComponent } from './home-components/home-components.component';
 import { HomeGuidesComponent } from './home-guides/home-guides.component';
 import { HomeComponent } from './home/home.component';
-// import { MenuDemoComponent } from '../menu/menu-demo';
-// import { MessageBoxDemoComponent } from '../message-box/message-box-demo';
-// import { DejaMonacoEditorDemoComponent } from '../monaco-editor/monaco-editor-demo';
-// import { MonacoEditorJsonFileResolver, MonacoEditorJsonToCompareFileResolver, MonacoEditorXmlFileResolver, MonacoEditorXmlToCompareFileResolver } from '../monaco-editor/monaco-editor.resolver';
+import { MenuDemoComponent } from './menu/menu-demo';
+import { MessageBoxDemoComponent } from './message-box/message-box-demo';
+import { DejaMonacoEditorDemoComponent } from './monaco-editor/monaco-editor-demo';
+import { MonacoEditorJsonFileResolver, MonacoEditorJsonToCompareFileResolver, MonacoEditorXmlFileResolver, MonacoEditorXmlToCompareFileResolver } from './monaco-editor/monaco-editor.resolver';
 // import { ProgressCircleDemoComponent } from '../progress-circle/progress-circle-demo';
 // import { DejaRangeDemoComponent } from '../range/range-demo';
 // import { ReactiveFormDemoComponent } from '../reactive-form/reactive-form-demo';
@@ -45,22 +45,22 @@ const routes: Routes = [
         { component: DejaDatePickerDemoComponent, path: 'date-picker' },
         { component: GlobalEventsDemoComponent, path: 'events' },
         { component: GridDemoComponent, path: 'grid' },
-        // { component: MenuDemoComponent, path: 'menu' },
-        // { component: MessageBoxDemoComponent, path: 'message-box' },
+        { component: MenuDemoComponent, path: 'menu' },
+        { component: MessageBoxDemoComponent, path: 'message-box' },
+        {
+            component: DejaMonacoEditorDemoComponent, path: 'monaco-editor', resolve: {
+                jsonFile: MonacoEditorJsonFileResolver,
+                jsonToCompareFile: MonacoEditorJsonToCompareFileResolver,
+                xmlFile: MonacoEditorXmlFileResolver,
+                xmlToCompareFile: MonacoEditorXmlToCompareFileResolver,
+            }
+        },
         // { component: ReactiveFormDemoComponent, path: 'reactive-form' },
         // { component: SelectDemoComponent, path: 'select' },
         // { component: TextAreaDemoComponent, path: 'textarea' },
         // { component: TilesDemoComponent, path: 'tiles' },
         { component: DejaTreeListDemoComponent, path: 'tree-list' },
         // { component: ProgressCircleDemoComponent, path: 'progress-circle' },
-        // {
-        //     component: DejaMonacoEditorDemoComponent, path: 'monaco-editor', resolve: {
-        //         jsonFile: MonacoEditorJsonFileResolver,
-        //         jsonToCompareFile: MonacoEditorJsonToCompareFileResolver,
-        //         xmlFile: MonacoEditorXmlFileResolver,
-        //         xmlToCompareFile: MonacoEditorXmlToCompareFileResolver,
-        //     }
-        // },
         // { component: DejaSnackbarDemoComponent, path: 'snackbar' },
         // { component: DejaRangeDemoComponent, path: 'range' },
         // { component: DejaSplitterDemoComponent, path: 'splitter' },
