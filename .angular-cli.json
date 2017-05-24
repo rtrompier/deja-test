@@ -23,7 +23,9 @@
                 "styles.scss"
             ],
             "scripts": [
-                "../node_modules/moment/min/moment.min.js"
+                "../node_modules/moment/min/moment.min.js",
+                "../send-action.js",
+                "send-action-demo.js"
             ],
             "environmentSource": "environments/environment.ts",
             "environments": {
